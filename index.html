@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ravelrig RDA - Demo</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -13,17 +13,23 @@
       background-color: #ffffff;
       color: #333;
     }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
     header {
       background-color: #803A97;
       color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      padding: 1rem 0;
     }
     .logo img {
       height: 50px;
+    }
+    nav {
+      margin-top: 1rem;
     }
     nav a {
       color: white;
@@ -40,25 +46,13 @@
       min-height: 400px;
       width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 2rem;
-      box-sizing: border-box;
       color: white;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
     }
     .cta-buttons a {
       display: inline-block;
-      margin: 0 1rem;
+      margin: 1rem 1rem 0 1rem;
       padding: 1rem 2rem;
       text-decoration: none;
       border-radius: 5px;
@@ -80,21 +74,23 @@
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">
-      <img src="images/ravelrig-logo.png" alt="Ravelrig RDA logo">
+    <div class="container">
+      <div class="logo">
+        <img src="images/ravelrig-logo.png" alt="Ravelrig RDA logo">
+      </div>
+      <nav>
+        <a href="#about">About Us</a>
+        <a href="#horses">Our Horses</a>
+        <a href="#involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#horses">Our Horses</a>
-      <a href="#involved">Get Involved</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
-  <section class="hero-image">
-    <img src="/ravelrig-demo/images/hero.png" alt="Therapeutic horse riding" class="hero-full">
-    <div class="hero-overlay">
+  <section class="hero">
+    <div class="container">
       <h1>RAVELRIG RIDING FOR THE DISABLED</h1>
       <p>Empowering individuals with disabilities through the therapeutic benefits of horse riding.</p>
       <div class="cta-buttons">
@@ -105,8 +101,10 @@
   </section>
 
   <section class="section" id="about">
-    <h2>About Us</h2>
-    <p>We provide therapeutic horse riding sessions that improve physical, emotional, and social well-being.</p>
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We provide therapeutic horse riding sessions that improve physical, emotional, and social well-being.</p>
+    </div>
   </section>
 
 </body>
